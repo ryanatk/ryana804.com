@@ -47,14 +47,13 @@ map <C-h> B
 map <C-l> W
 map <C-j> }
 map <C-k> {
-map <C-X> :x<CR>
 map <C-p> :tabprevious<CR>
 map <C-n> :tabnext<CR>
 map <C-t> :tabnew<CR>:e ./<CR>
 map <C-t> :tabnew<CR>:NERDTreeToggle<CR>
 map <C-f> :NERDTreeToggle<CR>
-map <Tab> >>
-map <S-Tab> <<
+nmap <Tab> >>
+nmap <S-Tab> <<
 nmap <Space> o<Esc>
 nmap <CR> :w<CR>
 imap <Tab> <Esc>

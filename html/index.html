@@ -1,7 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<title>ryana804.com</title>
+<!--
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jqcouch.js"></script>
+-->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jqcouch.js"></script>
+<script type="text/javascript">
+
+/*
+  // instantiate a new XMLHttpRequest object
+  var req = new XMLHttpRequest();
+  // Open a GET request to "/all_dbs"
+  req.open("GET", "http://localhost:5984/todo/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true");
+  // Send nothing as the request body
+  req.send("");
+  // Get the response
+  console.log(req.responseText);
+
+/*
+var dbc = $.jqCouch.connection('db');
+dbc.exists('/localhost:5984');
+console.log(dbc);
+/*
+*/
+var dc = $.jqCouch.connection('doc');
+var rev = dc.get('todo/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true')._rev;
+
+var doc = {_id:"0",a:1,b:1};
+if ($.jqCouch.connection('doc').save('todo', doc)._id !== false) {
+      alert("Created document with rev: "+doc._rev+", a="+doc.a);
+}
+
+//Get all documents from database. (With cache)
+var dc = $.jqCouch.connection('');
+dc.update_config('cache', true);
+if (total_documents == dc.all('todo').total_rows) {
+    var all_documents = dc.all('todo').rows;    
+}
+//Get all documents from database. (Without cache)
+var dc = $.jqCouch.connection('todo/9f2cb2ba5b64a06873c4d17cbf4712e4');
+var all = dc.all('todo');
+if (all.total_rows > 0) {
+      var all_documents = all.rows;    
+}
+/*
+*/
+</script>
+
+<style type="text/css">
+ul {margin:0; padding:0;}
+li {margin:0; padding:0;}
+</style>
+</head>
+
 <body>
-<h1>hi! ryana804</h1>
+<h1>dev yo! ryana804</h1>
+<ul>
+<li>yo</li>
+</ul>
 </body>
 </html>
