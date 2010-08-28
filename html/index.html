@@ -25,7 +25,6 @@ var dbc = $.jqCouch.connection('db');
 dbc.exists('/localhost:5984');
 console.log(dbc);
 /*
-*/
 var dc = $.jqCouch.connection('doc');
 var rev = dc.get('todo/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true')._rev;
 
@@ -46,7 +45,6 @@ var all = dc.all('todo');
 if (all.total_rows > 0) {
       var all_documents = all.rows;    
 }
-/*
 */
 </script>
 
@@ -57,9 +55,9 @@ li {margin:0; padding:0;}
 </head>
 
 <body>
-<h1>dev yo! ryana804</h1>
+<h1>working on this...</h1>
 <ul>
-<li>yo</li>
+<li>sort of...</li>
 </ul>
 </body>
 </html>
