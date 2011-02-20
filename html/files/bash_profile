@@ -24,10 +24,13 @@ alias gchange='git whatchanged -p --'
 
 # Personal customizations
 alias ehosts='sudo vi /etc/hosts'
-alias ebash='vim ~/.bash_profile'
+alias ebashlocal='vim ~/.bash_profile'
+alias ebash='vim ~/webwork/ryana804.com/html/files/bash_profile'
 alias rbash='. ~/.bash_profile'
 alias evimrc='vim ~/.vimrc'
-alias ll='ls -la'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 alias gr='grep -r'
 
 # Shell scripts, etc

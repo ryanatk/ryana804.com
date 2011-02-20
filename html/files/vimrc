@@ -58,5 +58,6 @@ nmap <Space> o<Esc>
 nmap <CR> :w<CR>
 imap <Tab> <Esc>
 
-abbr <form> <form action="" method="" id="">\n</form>
+abbr <form> <form action="" method="" id=""><CR></form>
 abbr for() for (var i = 0; i < len; i++) {<CR>}<Esc><S-o><Space>
+abbr <html> <!doctype html><CR><html><CR><head><CR><title></title><CR></head><CR><body><CR></body><CR></html>
