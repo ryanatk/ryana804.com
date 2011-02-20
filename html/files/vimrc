@@ -1,5 +1,5 @@
 " plugins
-source ~/.vim/plugins/NERD_tree.vim
+source ~/webwork/ryana804.com/html/files/NERD_tree.vim
 
 " turn off compatibility with the old vi
 set nocompatible
