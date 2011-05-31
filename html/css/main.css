@@ -1,0 +1,9 @@
+html {background-color:#8af;}
+body {width:600px; margin:0 auto; font:16px Verdana, sans-serif; line-height:150%; color:#fff; text-shadow:1px 1px 1px #ccc;}
+h1 {margin:25px 15px; font:44px Georgia, serif;}
+#links {position:relative;}
+#links>li {}
+#links>li>a {display:block; padding:4px 14px; border:1px solid transparent; border-radius:5px; font-weight:bold; text-decoration:none; color:#fff;}
+#links>li>a>span {display:none;}
+#links>li>a:hover {background:#fff; color:#555;}
+#links>li>a:hover>span {position:absolute; top:0; left:250px; display:block; width:320px; padding:10px 15px; border-radius:5px; background:#fff; color:#555;}
