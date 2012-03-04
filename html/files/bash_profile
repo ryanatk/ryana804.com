@@ -33,6 +33,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias gr='grep -r'
+alias vim='vim -p'
 
 # Shell scripts, etc
 alias elogs='tail -f /var/log/apache2/error_log'
