@@ -92,4 +92,4 @@ http.createServer(function (request, response) {
   } else {
     loadStaticWebFile(uri, response);
   }
-}).listen(8124, "dev.ryana804.com");
+}).listen(8124, "www.ryana804.com");

@@ -1,0 +1,10 @@
+h1 {text-align:center;}
+ol {width:40em; margin:0 auto;}
+li {padding:.5em;}
+li:nth-child(odd) {background:#f3f3f3;}
+li:nth-child(10n) {margin-bottom:3px; border-bottom:2px solid #f3f3f3;}
+li:hover {background:#fff; outline:3px solid #aaa;}
+span {display:inline-block; width:14em;}
+span.team {padding-left:2em; color:#aaa;}
+span.name {}
+span.info {width:8em; color:#aaa;}

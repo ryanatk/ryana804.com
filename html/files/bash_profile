@@ -3,6 +3,7 @@ alias aprestart='sudo /etc/init.d/apache2 restart'
 alias apreload='sudo /etc/init.d/apache2 restart'
 alias apenable='sudo a2ensite'
 alias aphttpd='sudo vi /etc/apache2/httpd.conf'
+alias capache='cd /etc/apache2/'
 
 # Git tab completion
 source ~/.git-completion.sh
@@ -25,6 +26,7 @@ alias gchange='git whatchanged -p --'
 # Personal customizations
 alias ehosts='sudo vi /etc/hosts'
 alias ebashlocal='vim ~/.bash_profile'
+alias cweb='cd ~/webwork/'
 alias ebash='vim ~/webwork/ryana804.com/html/files/bash_profile'
 alias rbash='. ~/.bash_profile'
 alias evimrc='vim ~/webwork/ryana804.com/html/files/vimrc'
