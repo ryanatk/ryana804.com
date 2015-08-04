@@ -1,0 +1,20 @@
+{
+  "name": "ryana804.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanatk/ryana804.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanatk/ryana804.com/issues"
+  },
+  "homepage": "https://github.com/ryanatk/ryana804.com"
+}
