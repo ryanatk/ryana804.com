@@ -4,6 +4,7 @@
 <title>League Rules</title>
   <link rel="stylesheet" href="/bbfl/css/main.css" type="text/css" />
   <style type="text/css">
+    .toc {display:inline-block; padding:10px 20px; border:1px solid #eee; background:#fafafa; list-style:none;}
     ul#toc {}
     ul#toc li a {}
     ul#rules li ul {}
@@ -13,12 +14,29 @@
     #bbfl #toc *,
     #bbfl #rules * {}
     #bbfl #rules h2 a:hover {}
+    ol.seasons {padding-left:0;}
+    ol.seasons li {display:inline-block; padding-right:25px; font-size:150%; font-weight:bold;}
+    ol.seasons li a {text-decoration:none;}
+    ol.seasons li a:hover {text-decoration:underline;}
+    ol.seasons li.active a {color:inherit; text-decoration:underline;}
   </style>
 </head>
 
 <body>
-<h1><a name="bbflrules">League Rules</a></h1>
-<ul id="toc">
+  <h1>Black & Blue Football League</h1>
+  <!--
+  <h1><a href="/bbfl/">Black & Blue Football League</a></h1>
+  -->
+
+  <ol class="seasons">
+    <li><a href="2015season.html">2015</a></li>
+    <li><a href="2014season.html">2014</a></li>
+    <li><a href="2013season.html">2013</a></li>
+    <li><a href="2012season.html">2012</a></li>
+    <li class="active"><a href="rules.html">Rules</a></li>
+  </ol>
+
+<ul class="toc">
   <li><a href="#overview">League Overview</a></li>
   <li><a href="#draft">Draft</a></li>
   <li><a href="#feespayouts">Fees & Payouts</a></li>
@@ -86,7 +104,7 @@
 
 <h2><a name="ir">Injured Reserve:</a></h2>
 <ul>
-  <li>The site allows players to go on IR when they are on IR for their NFL team.</li>
+  <li>The site allows players to go on IR when they are on IR for their NFL team. This is beneficial for players you may want to keep next year.</li>
 </ul>
 
 <h2><a name="postseason">Postseason:</a></h2>
