@@ -1,3 +1,17 @@
 body {margin:10px 10%; line-height:1.5em; font-family:Sans-serif; color:#333;}
 a, a:visited {color:#00E;}
 li {margin:2px 0;}
+
+.toc {display:inline-block; padding:10px 20px; border:1px solid #eee; background:#fafafa; list-style:none;}
+
+ol.seasons {padding-left:0;}
+ol.seasons li {display:inline-block; padding-right:25px; font-size:150%; font-weight:bold;}
+ol.seasons li a {text-decoration:none;}
+ol.seasons li a:hover {text-decoration:underline;}
+ol.seasons li.active a {color:inherit; text-decoration:underline;}
+
+a[href="#"] {font-size:.75em; color:#aaa;}
+
+.keepers-list {width:100%; border-collapse:collapse;}
+.keepers-list td {padding:5px 20px; border:1px solid #f3f3f3;}
+.keepers-list tr:hover td {background:#333; color:#fff;}
