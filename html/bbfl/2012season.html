@@ -2,30 +2,17 @@
 <html>
 <head>
   <title>Black & Blue Football League</title>
-  <link rel="stylesheet" href="/bbfl/css/main.css" type="text/css" />
-  <style>
-    .toc {display:inline-block; padding:10px 20px; border:1px solid #eee; background:#fafafa; list-style:none;}
-    table {width:100%; border-collapse:collapse;}
-    td {padding:5px 20px; border:1px solid #f3f3f3;}
-    tr:hover td {background:#333; color:#fff;}
-    a[href="#"] {font-size:.75em; color:#aaa;}
-    ol.seasons {padding-left:0;}
-    ol.seasons li {display:inline-block; padding-right:25px; font-size:150%; font-weight:bold;}
-    ol.seasons li a {text-decoration:none;}
-    ol.seasons li a:hover {text-decoration:underline;}
-    ol.seasons li.active a {color:inherit; text-decoration:underline;}
-  </style>
+  <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  <link rel="import" href="./header.html" />
+  <script src="./js/imports.js"></script>
 </head>
+
 <body>
-  <h1>Black & Blue Football League</h1>
-  <!--
-  <h1><a href="/bbfl/">Black & Blue Football League</a></h1>
-  -->
-  <ol class="seasons">
-    <li><a href="2014season.html">2014</a></li>
-    <li><a href="2013season.html">2013</a></li>
-    <li class="active"><a href="2012season.html">2012</a></li>
-  </ol>
+  <header></header>
+  <script>
+    addImport('header', 'header-template');
+  </script>
+
   <ul class="toc">
     <li><a href="#draftOrder">Draft Order</a></li>
     <li><a href="#keepers">Keepers</a></li>

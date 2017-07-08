@@ -2,10 +2,17 @@
 <html>
 <head>
   <title>Black & Blue Football League</title>
-  <link rel="stylesheet" href="/bbfl/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  <link rel="import" href="./header.html" />
+  <script src="./js/imports.js"></script>
 </head>
+
 <body>
-  <h1><a href="/bbfl/">Black & Blue Football League</a></h1>
+  <header></header>
+  <script>
+    addImport('header', 'header-template');
+  </script>
+
   <ul>
     <li><a href="http://bbfl04.league.fantasy.nfl.com/">NFL.com League Website</a></li>
     <li><a href="/bbfl/rules.html">League Rules</a></li>

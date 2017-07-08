@@ -11,7 +11,6 @@ var importTemplates = function () {
     if (key)
       templates[key] = template;
   }
-  console.log(templates);
 
   return templates;
 };
