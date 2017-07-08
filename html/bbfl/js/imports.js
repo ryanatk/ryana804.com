@@ -11,12 +11,15 @@ var importTemplates = function () {
     if (key)
       templates[key] = template;
   }
+  console.log(templates);
 
   return templates;
 };
 
+var templates = importTemplates();
+
 var addImport = function (selector, templateId) {
-  var template = importTemplates[templateId];
+  var template = templates[templateId];
   var clone = document.importNode(template.content, true);
 
   document.querySelector(selector).appendChild(clone);
