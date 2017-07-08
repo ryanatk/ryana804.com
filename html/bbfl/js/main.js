@@ -1,18 +1,16 @@
 var bbfl = window.bbfl || {};
 
 (function () {
-  var templates = importTemplates();
-
+  bbfl.templates = {};
   bbfl.addHeader = addHeader;
 
 
-  function importTemplates() {
+  (function importTemplates() {
     var addTemplate = function (template) {
       var key = template.id;
       if (key)
         bbfl.templates[key] = document.importNode(template.content, true);
     };
-    var templates = {};
     var links = document.querySelectorAll('link[rel="import"]');
     var len = links.length;
 
@@ -20,27 +18,33 @@ var bbfl = window.bbfl || {};
       // Clone the <template> in the import.
       addTemplate(links[len].import.querySelector('template'));
     }
-  }
+  })();
 
   function appendTemplate(element, templateId) {
-    var template = templates[templateId];
-
-    element.appendChild(clone);
+    element.appendChild(bbfl.templates[templateId]);
   };
 
-  function setActiveLink(element, optionalSelector) {
-    var parent = optionalSelector || 'a';
-    var links = element.querySelectorAll('a');
+  function setActiveLink(wrapper, tagName) {
+    var elTagName = tagName || 'a';
+    var addClass = function (el) {
+      if (el.tagName === elTagName.toUpperCase()) {
+        el.classList.add('active');
+      } else {
+        addClass(el.parentNode);
+      }
+    };
+    var links = wrapper.querySelectorAll('a');
     var len = links.length;
 
     while (len--) {
       if (~links[len].href.indexOf(document.location.pathname))
-        links[len].classList.add('active');
+        addClass(links[len]);
     }
   }
 
-  function addHeader(selector) {
-    var header = document.querySelector(selector);
+  function addHeader() {
+    var header = document.querySelector('header');
+
     appendTemplate(header, 'header-template');
     setActiveLink(header, 'li')
   }
